@@ -18,7 +18,10 @@ const Navbar = (props) => {
 
   const defaultProps = { color: "#B4B4B8" };
   const selectedProps = { borderBottom: "1px solid #13426B", color: "#13426B" };
-  const hoverProps = { borderBottom: "1px solid #26CAD3", color: "#26CAD3" };
+  const hoverProps = {
+    borderBottom: { sx: "none", md: "1px solid #26CAD3" },
+    color: { sx: "none", md: "#26CAD3" },
+  };
 
   const [barProps, setBarProps] = useState([
     selectedProps,
@@ -33,12 +36,6 @@ const Navbar = (props) => {
   useEffect(() => {
     let counter = -1;
     for (const i in props.pagesRef) {
-      console.log("counter", counter);
-      console.log("scrollPosition", scrollPosition);
-      console.log(
-        "props.pagesRef[i].current.offsetTop - (height + 1)",
-        props.pagesRef[i].current.offsetTop - (height + 1)
-      );
       if (scrollPosition < props.pagesRef[i].current.offsetTop - (height + 1)) {
         break;
       }
@@ -69,7 +66,7 @@ const Navbar = (props) => {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop - (height + 1),
+      top: elementRef.current.offsetTop - height,
       behavior: "smooth",
     });
   };
@@ -96,7 +93,7 @@ const Navbar = (props) => {
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
-              letterSpacing: "3px",
+              letterSpacing: { sx: "none", md: "3px" },
             },
           }}
           onClick={() => {
