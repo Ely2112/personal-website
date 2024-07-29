@@ -1,15 +1,22 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = (props) => {
+  const [height, setHeight] = useState(0);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    setHeight(ref.current.clientHeight);
+  });
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
 
-  const defaultProps = { color: "#D6D8DA" };
+  const defaultProps = { color: "#B4B4B8" };
   const selectedProps = { borderBottom: "1px solid #13426B", color: "#13426B" };
   const hoverProps = { borderBottom: "1px solid #26CAD3", color: "#26CAD3" };
 
@@ -26,7 +33,7 @@ const Navbar = (props) => {
   useEffect(() => {
     let counter = -1;
     for (const i in props.pagesRef) {
-      if (scrollPosition < props.pagesRef[i].current.offsetTop - 65) {
+      if (scrollPosition < props.pagesRef[i].current.offsetTop - height) {
         break;
       }
       ++counter;
@@ -53,13 +60,14 @@ const Navbar = (props) => {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop - 65,
+      top: elementRef.current.offsetTop - height,
       behavior: "smooth",
     });
   };
 
   return (
     <Box
+      ref={ref}
       justifyContent="space-between"
       alignItems="center"
       bgcolor="#FFFFFF"
@@ -75,7 +83,7 @@ const Navbar = (props) => {
           letterSpacing="0px"
           fontWeight="700"
           sx={{
-            fontSize: { xs: "1.5rem", md: "2rem" },
+            fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -101,7 +109,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[0]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -117,7 +125,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[1]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -133,7 +141,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[2]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -149,7 +157,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[3]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -165,7 +173,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[4]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
@@ -181,7 +189,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[5]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             "&:hover": {
               ...hoverProps,
@@ -196,7 +204,7 @@ const Navbar = (props) => {
         <Typography
           {...barProps[6]}
           sx={{
-            fontSize: { xs: "0.7rem", md: "1.2rem" },
+            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
             cursor: "pointer",
             transition: "all .2s ease",
             "&:hover": {
