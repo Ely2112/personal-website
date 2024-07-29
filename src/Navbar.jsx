@@ -33,10 +33,19 @@ const Navbar = (props) => {
   useEffect(() => {
     let counter = -1;
     for (const i in props.pagesRef) {
-      if (scrollPosition < props.pagesRef[i].current.offsetTop - height) {
+      console.log("counter", counter);
+      console.log("scrollPosition", scrollPosition);
+      console.log(
+        "props.pagesRef[i].current.offsetTop - (height + 1)",
+        props.pagesRef[i].current.offsetTop - (height + 1)
+      );
+      if (scrollPosition < props.pagesRef[i].current.offsetTop - (height + 1)) {
         break;
       }
       ++counter;
+    }
+    if (counter === -1) {
+      counter = 0;
     }
     let tempBarProps = [
       defaultProps,
@@ -60,7 +69,7 @@ const Navbar = (props) => {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: elementRef.current.offsetTop - height,
+      top: elementRef.current.offsetTop - (height + 1),
       behavior: "smooth",
     });
   };
