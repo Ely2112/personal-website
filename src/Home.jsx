@@ -57,7 +57,7 @@ const Home = () => {
         </Box>
         <Box display="flex" position="relative" top="200px" gap="24px">
           <Button
-            href="src/assets/Resume_POON Kwan Hei Anson.pdf"
+            href="./src/assets/Resume_POON Kwan Hei Anson.pdf"
             download="Resume_POON Kwan Hei Anson.pdf"
           >
             Resume
