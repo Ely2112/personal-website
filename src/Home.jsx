@@ -57,8 +57,9 @@ const Home = () => {
         </Box>
         <Box display="flex" position="relative" top="200px" gap="24px">
           <Button
-            href="https://github.com/Ely2112/personal-website/blob/main/src/assets/Resume_POON%20Kwan%20Hei%20Anson.pdf"
-            download="Resume_POON%20Kwan%20Hei%20Anson.pdf"
+            href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
+            target="_blank"
+            download="Resume_POON Kwan Hei Anson.pdf"
           >
             Resume
           </Button>
