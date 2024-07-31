@@ -12,7 +12,7 @@ const Home = () => {
         flexDirection="column"
         sx={{
           height: "100%",
-          width: "1200px",
+          width: "900px",
           margin: "0 auto",
           display: { xs: "none", md: "flex" },
         }}
