@@ -103,8 +103,6 @@ const GPA = () => {
     CGA.push(totalUnit / totalCredit);
   }
 
-  console.log(TGA);
-
   const xLabels = Object.keys(courses);
 
   return (
@@ -142,10 +140,10 @@ const GPA = () => {
             tickLabelStyle: { fontFamily: "FS Elliot Pro" },
           },
         ]}
-        onAreaClick={(event, d) => console.log(d)}
-        onMarkClick={(event, d) => console.log(d)}
-        onLineClick={(event, d) => console.log(d)}
-        onAxisClick={(event, d) => console.log(d)}
+        // onAreaClick={(event, d) => console.log(d)}
+        // onMarkClick={(event, d) => console.log(d)}
+        // onLineClick={(event, d) => console.log(d)}
+        // onAxisClick={(event, d) => console.log(d)}
       >
         <ChartsReferenceLine
           y={3.7}

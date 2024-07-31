@@ -35,8 +35,11 @@ const Navbar = (props) => {
 
   useEffect(() => {
     let counter = -1;
-    for (const i in props.pagesRef) {
-      if (scrollPosition < props.pagesRef[i].current.offsetTop - (height + 1)) {
+    for (let i = 0; i < props.pagesRef.length; ++i) {
+      if (
+        scrollPosition <
+        props.pagesRef[i][1].current.offsetTop - (height + 1)
+      ) {
         break;
       }
       ++counter;
@@ -97,7 +100,7 @@ const Navbar = (props) => {
             },
           }}
           onClick={() => {
-            scrollToSection(props.pagesRef.AnsonPoon);
+            scrollToSection(props.pagesRef[0][1]);
           }}
         >
           Anson Poon
@@ -112,117 +115,27 @@ const Navbar = (props) => {
           margin: { xs: "0 auto", md: "0" },
         }}
       >
-        <Typography
-          {...barProps[0]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.AnsonPoon);
-          }}
-        >
-          Home
-        </Typography>
-        <Typography
-          {...barProps[1]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.About);
-          }}
-        >
-          About
-        </Typography>
-        <Typography
-          {...barProps[2]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.Work);
-          }}
-        >
-          Work
-        </Typography>
-        <Typography
-          {...barProps[3]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.Education);
-          }}
-        >
-          Education
-        </Typography>
-        <Typography
-          {...barProps[4]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.Project);
-          }}
-        >
-          Project
-        </Typography>
-        <Typography
-          {...barProps[5]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.Other);
-          }}
-        >
-          Other
-        </Typography>
-        <Typography
-          {...barProps[6]}
-          sx={{
-            fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
-            cursor: "pointer",
-            transition: "all .2s ease",
-            "&:hover": {
-              ...hoverProps,
-            },
-          }}
-          onClick={() => {
-            scrollToSection(props.pagesRef.Contact);
-          }}
-        >
-          Contact
-        </Typography>
+        {props.pagesRef.map((title, index) => {
+          const titleName = title[0];
+          return (
+            <Typography
+              {...barProps[index]}
+              sx={{
+                fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
+                cursor: "pointer",
+                transition: "all .2s ease",
+                "&:hover": {
+                  ...hoverProps,
+                },
+              }}
+              onClick={() => {
+                scrollToSection(title[1]);
+              }}
+            >
+              {titleName}
+            </Typography>
+          );
+        })}
       </Box>
     </Box>
   );

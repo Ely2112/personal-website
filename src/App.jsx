@@ -3,69 +3,66 @@ import { Box, Grid, Typography } from "@mui/material";
 import "./App.css";
 import GPA from "./GPA";
 import Navbar from "./Navbar";
+import Home from "./Home";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
 function App() {
-  const AnsonPoon = useRef(null);
-  const About = useRef(null);
-  const Work = useRef(null);
-  const Education = useRef(null);
-  const Project = useRef(null);
-  const Other = useRef(null);
-  const Contact = useRef(null);
+  const HomeRef = useRef(null);
+  const AboutRef = useRef(null);
+  const WorkRef = useRef(null);
+  const EducationRef = useRef(null);
+  const ProjectRef = useRef(null);
+  const OtherRef = useRef(null);
+  const ContactRef = useRef(null);
 
-  const [count, setCount] = useState(0);
+  const NavbarArray = [
+    ["Home", HomeRef],
+    ["About", AboutRef],
+    ["Work", WorkRef],
+    ["Education", EducationRef],
+    ["Project", ProjectRef],
+    ["Other", OtherRef],
+    ["Contact", ContactRef],
+  ];
+
+  const [navbarHeight, setNavbarHeight] = useState(0);
   const theme = createTheme({
     typography: {
       fontFamily: `"FS Elliot Pro", sans-serif`,
-      fontSize: 14,
-      fontWeightLight: 300,
-      fontWeightRegular: 400,
-      fontWeightMedium: 500,
     },
   });
 
-  useEffect(() => {
-    window.matchMedia("(prefers-color-scheme: dark)")
-      ? console.log("dark")
-      : console.log("light");
-  }, []);
+  // useEffect(() => {
+  //   window.matchMedia("(prefers-color-scheme: dark)")
+  //     ? console.log("dark")
+  //     : console.log("light");
+  // }, []);
 
   return (
     <ThemeProvider theme={theme}>
-      <Box>
-        <Box position="sticky" width="100%" top="0" zIndex={1}>
-          <Navbar
-            pagesRef={{
-              AnsonPoon: AnsonPoon,
-              About: About,
-              Work: Work,
-              Education: Education,
-              Project: Project,
-              Other: Other,
-              Contact: Contact,
-            }}
-          />
+      <Box sx={{ overflowX: "hidden" }}>
+        <Box position="fixed" width="100vw" top="0" zIndex={1}>
+          <Navbar pagesRef={NavbarArray} />
         </Box>
-        <Box ref={AnsonPoon} width="100vw" height="100vh">
-          <Typography>Anson Poon</Typography>
+        <Box ref={HomeRef} width="100vw" height="100vh">
+          <Home />
         </Box>
-        <Box ref={About} width="100vw" height="100vh">
+        <Box ref={AboutRef} width="100vw" height="100vh">
           <Typography>About</Typography>
         </Box>
-        <Box ref={Work} width="100vw" height="100vh">
+        <Box ref={WorkRef} width="100vw" height="100vh">
           <Typography>Work</Typography>
         </Box>
-        <Box ref={Education} width="100vw" height="100vh">
+        <Box ref={EducationRef} width="100vw" height="100vh">
           <Typography>Education</Typography>
         </Box>
-        <Box ref={Project} width="100vw" height="100vh">
+        <Box ref={ProjectRef} width="100vw" height="100vh">
           <Typography>Project</Typography>
         </Box>
-        <Box ref={Other} width="100vw" height="100vh">
+        <Box ref={OtherRef} width="100vw" height="100vh">
           <Typography>Other</Typography>
         </Box>
-        <Box ref={Contact} width="100vw" height="100vh">
+        <Box ref={ContactRef} width="100vw" height="100vh">
           <Typography>Contact</Typography>
         </Box>
         <Box margin="24px auto" width="90vw" height="70vh">
