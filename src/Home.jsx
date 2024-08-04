@@ -67,11 +67,15 @@ const Home = (props) => {
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <ContactPageIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
@@ -83,11 +87,15 @@ const Home = (props) => {
           <Button
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <LinkedInIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
@@ -165,11 +173,15 @@ const Home = (props) => {
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <ContactPageIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
@@ -181,11 +193,15 @@ const Home = (props) => {
           <Button
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <LinkedInIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
@@ -263,11 +279,15 @@ const Home = (props) => {
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <ContactPageIcon sx={{ color: "#13426B", fontSize: "1.6em" }} />
@@ -279,11 +299,15 @@ const Home = (props) => {
           <Button
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
+            disableRipple={true}
             sx={{
               height: "40px",
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
+              "&:hover": {
+                backgroundColor: "transparent",
+              },
             }}
           >
             <LinkedInIcon sx={{ color: "#13426B", fontSize: "1.6rem" }} />
