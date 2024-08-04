@@ -110,7 +110,7 @@ const Navbar = (props) => {
         height="fit-content"
         width="fit-content"
         sx={{
-          gap: { xs: "12px", md: "24px" },
+          gap: { xs: "12px", sm: "18px", md: "24px" },
           display: "flex",
           margin: { xs: "0 auto", md: "0" },
         }}
