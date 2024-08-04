@@ -4,6 +4,7 @@ import personalImage from "./assets/personal_image2.jpeg";
 import ReactCurvedText from "react-curved-text";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ const Home = () => {
             zIndex: "-1",
           }}
         />
-        <Box position="relative" top="20.75px">
+        <Box position="absolute">
           <ReactCurvedText
             width={500}
             height={500}
@@ -58,19 +59,19 @@ const Home = () => {
             svgProps={null}
           />
         </Box>
-        <Box display="flex" position="relative" top="-50px" gap="24px">
+        <Box display="flex" position="relative" top="240px" gap="24px">
           <Button
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B" }} size="2.4rem" />
+            <ContactPageIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
             <Typography color="#13426B" fontSize="1.2rem" lineHeight="1.2rem">
               Resume
             </Typography>
@@ -80,17 +81,23 @@ const Home = () => {
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B" }} size="2.4rem" />
+            <LinkedInIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
             <Typography color="#13426B" fontSize="1.2rem" lineHeight="1.2rem">
               LinkedIn
             </Typography>
           </Button>
+        </Box>
+        <Box display="flex" position="relative" top="340px">
+          <ArrowDownwardIcon
+            className="blinking"
+            sx={{ color: "#B4B4B8", fontSize: "4.8rem" }}
+          />
         </Box>
       </Box>
 
@@ -117,12 +124,12 @@ const Home = () => {
             zIndex: "-1",
           }}
         />
-        <Box position="relative" top="20.75px">
+        <Box position="absolute">
           <ReactCurvedText
-            width={400}
-            height={400}
-            cx={200}
-            cy={200}
+            width={425}
+            height={425}
+            cx={212.5}
+            cy={212.5}
             rx={120}
             ry={120}
             startOffset={0}
@@ -134,7 +141,7 @@ const Home = () => {
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
-                transformOrigin: "200px 200px",
+                transformOrigin: "212.5px 212.5px",
               },
               className: "rotating",
             }}
@@ -144,19 +151,19 @@ const Home = () => {
             svgProps={null}
           />
         </Box>
-        <Box display="flex" position="relative" top="-50px" gap="12px">
+        <Box display="flex" position="relative" top="200px" gap="12px">
           <Button
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B" }} size="2rem" />
+            <ContactPageIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
             <Typography color="#13426B" fontSize="1rem" lineHeight="1rem">
               Resume
             </Typography>
@@ -166,17 +173,23 @@ const Home = () => {
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B" }} size="2rem" />
+            <LinkedInIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
             <Typography color="#13426B" fontSize="1rem" lineHeight="1rem">
               LinkedIn
             </Typography>
           </Button>
+        </Box>
+        <Box display="flex" position="relative" top="280px">
+          <ArrowDownwardIcon
+            className="blinking"
+            sx={{ color: "#B4B4B8", fontSize: "4rem" }}
+          />
         </Box>
       </Box>
 
@@ -203,12 +216,12 @@ const Home = () => {
             zIndex: "-1",
           }}
         />
-        <Box position="relative" top="20.75px">
+        <Box position="absolute">
           <ReactCurvedText
-            width={400}
-            height={400}
-            cx={200}
-            cy={200}
+            width={220}
+            height={220}
+            cx={110}
+            cy={110}
             rx={100}
             ry={100}
             startOffset={0}
@@ -220,7 +233,7 @@ const Home = () => {
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
-                transformOrigin: "200px 200px",
+                transformOrigin: "110px 110px",
               },
               className: "rotating",
             }}
@@ -230,19 +243,19 @@ const Home = () => {
             svgProps={null}
           />
         </Box>
-        <Box display="flex" position="relative" top="-50px" gap="8px">
+        <Box display="flex" position="relative" top="170px" gap="8px">
           <Button
             href="https://ely2112.github.io/resume/Resume_POON%20Kwan%20Hei%20Anson.pdf"
             target="_blank"
             download="Resume_POON Kwan Hei Anson.pdf"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B" }} size="1.6rem" />
+            <ContactPageIcon sx={{ color: "#13426B", fontSize: "1.6em" }} />
             <Typography color="#13426B" fontSize="0.8rem" lineHeight="0.8rem">
               Resume
             </Typography>
@@ -252,17 +265,23 @@ const Home = () => {
             href="https://www.linkedin.com/in/kwan-hei-anson-poon/"
             target="_blank"
             sx={{
-              height: "fit-content",
-              gap: "8px",
+              height: "40px",
+              gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B" }} size="1.6rem" />
+            <LinkedInIcon sx={{ color: "#13426B", fontSize: "1.6rem" }} />
             <Typography color="#13426B" fontSize="0.8rem" lineHeight="0.8rem">
               LinkedIn
             </Typography>
           </Button>
+        </Box>
+        <Box display="flex" position="relative" top="240px">
+          <ArrowDownwardIcon
+            className="blinking"
+            sx={{ color: "#B4B4B8", fontSize: "3.2rem" }}
+          />
         </Box>
       </Box>
     </Box>

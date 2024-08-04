@@ -82,7 +82,7 @@ const Navbar = (props) => {
       bgcolor="#FFFFFF"
       sx={{
         boxShadow: "0px 7px 10px 0px #0000000A ,0px 3px 8px 0px #0000000F",
-        padding: { xs: "4px 4px", md: "8px 48px" },
+        padding: { xs: "4px 4px", md: "8px 64px" },
         display: { xs: "block", md: "flex" },
       }}
     >
