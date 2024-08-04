@@ -28,5 +28,5 @@ body {
   -ms-animation: rotating 30s linear infinite;
   -o-animation: rotating 30s linear infinite;
   animation: rotating 30s linear infinite;
-  transform-origin: 250px 250px;
+  transform-origin: center center;
 }

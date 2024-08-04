@@ -82,7 +82,7 @@ const Navbar = (props) => {
       bgcolor="#FFFFFF"
       sx={{
         boxShadow: "0px 7px 10px 0px #0000000A ,0px 3px 8px 0px #0000000F",
-        padding: { xs: "4px 12px", md: "8px 48px" },
+        padding: { xs: "4px 4px", md: "8px 48px" },
         display: { xs: "block", md: "flex" },
       }}
     >
@@ -121,7 +121,7 @@ const Navbar = (props) => {
             <Typography
               {...barProps[index]}
               sx={{
-                fontSize: { xs: "0.7rem", sm: "1rem", md: "1.2rem" },
+                fontSize: { xs: "0.8rem", sm: "1rem", md: "1.2rem" },
                 cursor: "pointer",
                 transition: "all .2s ease",
                 "&:hover": {

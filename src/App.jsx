@@ -22,7 +22,6 @@ function App() {
     ["Education", EducationRef],
     ["Project", ProjectRef],
     ["Other", OtherRef],
-    ["Contact", ContactRef],
   ];
 
   const [navbarHeight, setNavbarHeight] = useState(0);
@@ -61,9 +60,6 @@ function App() {
         </Box>
         <Box ref={OtherRef} width="100vw" height="100vh">
           <Typography>Other</Typography>
-        </Box>
-        <Box ref={ContactRef} width="100vw" height="100vh">
-          <Typography>Contact</Typography>
         </Box>
         <Box margin="24px auto" width="90vw" height="70vh">
           <GPA />
