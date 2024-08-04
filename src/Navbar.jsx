@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { Context } from "./App";
 
 const Navbar = (props) => {
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useContext(Context);
   const ref = useRef(null);
 
   useEffect(() => {

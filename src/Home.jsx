@@ -5,8 +5,11 @@ import ReactCurvedText from "react-curved-text";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { useContext } from "react";
+import { Context } from "./App";
 
-const Home = () => {
+const Home = (props) => {
+  const [height, setHeight] = useContext(Context);
   return (
     <Box height="100%" width="100%">
       <Box
@@ -96,7 +99,13 @@ const Home = () => {
         <Box display="flex" position="relative" top="280px">
           <ArrowDownwardIcon
             className="blinking"
-            sx={{ color: "#B4B4B8", fontSize: "4.8rem" }}
+            sx={{ color: "#B4B4B8", fontSize: "4.8rem", cursor: "pointer" }}
+            onClick={() => {
+              window.scrollTo({
+                top: props.aboutRef.current.offsetTop - height,
+                behavior: "smooth",
+              });
+            }}
           />
         </Box>
       </Box>
@@ -188,7 +197,13 @@ const Home = () => {
         <Box display="flex" position="relative" top="230px">
           <ArrowDownwardIcon
             className="blinking"
-            sx={{ color: "#B4B4B8", fontSize: "4rem" }}
+            sx={{ color: "#B4B4B8", fontSize: "4rem", cursor: "pointer" }}
+            onClick={() => {
+              window.scrollTo({
+                top: props.aboutRef.current.offsetTop - height,
+                behavior: "smooth",
+              });
+            }}
           />
         </Box>
       </Box>
@@ -280,7 +295,13 @@ const Home = () => {
         <Box display="flex" position="relative" top="190px">
           <ArrowDownwardIcon
             className="blinking"
-            sx={{ color: "#B4B4B8", fontSize: "3.2rem" }}
+            sx={{ color: "#B4B4B8", fontSize: "3.2rem", cursor: "pointer" }}
+            onClick={() => {
+              window.scrollTo({
+                top: props.aboutRef.current.offsetTop - height,
+                behavior: "smooth",
+              });
+            }}
           />
         </Box>
       </Box>

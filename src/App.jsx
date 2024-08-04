@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, createContext } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import "./App.css";
 import GPA from "./GPA";
@@ -6,7 +6,11 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
+export const Context = createContext();
+
 function App() {
+  const [height, setHeight] = useState(0);
+
   const HomeRef = useRef(null);
   const AboutRef = useRef(null);
   const WorkRef = useRef(null);
@@ -40,12 +44,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ overflowX: "hidden" }}>
-        <Box position="fixed" width="100vw" top="0" zIndex={1}>
-          <Navbar pagesRef={NavbarArray} />
-        </Box>
-        <Box ref={HomeRef} width="100vw" height="100vh">
-          <Home />
-        </Box>
+        <Context.Provider value={[height, setHeight]}>
+          <Box position="fixed" width="100vw" top="0" zIndex={1}>
+            <Navbar pagesRef={NavbarArray} />
+          </Box>
+          <Box ref={HomeRef} width="100vw" height="100vh">
+            <Home aboutRef={AboutRef} />
+          </Box>
+        </Context.Provider>
         <Box ref={AboutRef} width="100vw" height="100vh">
           <Typography>About</Typography>
         </Box>
