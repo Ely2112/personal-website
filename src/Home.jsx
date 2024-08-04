@@ -110,8 +110,8 @@ const Home = () => {
           component="img"
           src={personalImage}
           sx={{
-            height: "150px",
-            width: "150px",
+            height: "170px",
+            width: "170px",
             objectFit: "cover",
             borderRadius: "9999px",
             zIndex: "-1",
@@ -123,14 +123,14 @@ const Home = () => {
             height={400}
             cx={200}
             cy={200}
-            rx={100}
-            ry={100}
+            rx={120}
+            ry={120}
             startOffset={0}
             reversed={false}
             text="Poon Kwan Hei Anson - Computer Science - "
             textProps={{
               style: {
-                fontSize: "22.3px",
+                fontSize: "28.7px",
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
@@ -196,8 +196,8 @@ const Home = () => {
           component="img"
           src={personalImage}
           sx={{
-            height: "100px",
-            width: "100px",
+            height: "150px",
+            width: "150px",
             objectFit: "cover",
             borderRadius: "9999px",
             zIndex: "-1",
@@ -205,22 +205,22 @@ const Home = () => {
         />
         <Box position="relative" top="20.75px">
           <ReactCurvedText
-            width={300}
-            height={300}
-            cx={150}
-            cy={150}
-            rx={65}
-            ry={65}
+            width={400}
+            height={400}
+            cx={200}
+            cy={200}
+            rx={100}
+            ry={100}
             startOffset={0}
             reversed={false}
             text="Poon Kwan Hei Anson - Computer Science - "
             textProps={{
               style: {
-                fontSize: "10.9px",
+                fontSize: "22.3px",
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
-                transformOrigin: "150px 150px",
+                transformOrigin: "200px 200px",
               },
               className: "rotating",
             }}
