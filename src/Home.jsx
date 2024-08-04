@@ -93,7 +93,7 @@ const Home = () => {
             </Typography>
           </Button>
         </Box>
-        <Box display="flex" position="relative" top="340px">
+        <Box display="flex" position="relative" top="280px">
           <ArrowDownwardIcon
             className="blinking"
             sx={{ color: "#B4B4B8", fontSize: "4.8rem" }}
@@ -185,7 +185,7 @@ const Home = () => {
             </Typography>
           </Button>
         </Box>
-        <Box display="flex" position="relative" top="280px">
+        <Box display="flex" position="relative" top="230px">
           <ArrowDownwardIcon
             className="blinking"
             sx={{ color: "#B4B4B8", fontSize: "4rem" }}
@@ -277,7 +277,7 @@ const Home = () => {
             </Typography>
           </Button>
         </Box>
-        <Box display="flex" position="relative" top="240px">
+        <Box display="flex" position="relative" top="190px">
           <ArrowDownwardIcon
             className="blinking"
             sx={{ color: "#B4B4B8", fontSize: "3.2rem" }}
