@@ -28,5 +28,4 @@ body {
   -ms-animation: rotating 30s linear infinite;
   -o-animation: rotating 30s linear infinite;
   animation: rotating 30s linear infinite;
-  transform-origin: 50% 50%;
 }

@@ -48,6 +48,7 @@ const Home = () => {
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
+                transformOrigin: "250px 250px",
               },
               className: "rotating",
             }}
@@ -133,6 +134,7 @@ const Home = () => {
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
+                transformOrigin: "200px 200px",
               },
               className: "rotating",
             }}
@@ -218,6 +220,7 @@ const Home = () => {
                 fontWeight: 300,
                 fontFamily: `"FS Elliot Pro", sans-serif`,
                 letterSpacing: "0.3rem",
+                transformOrigin: "150px 150px",
               },
               className: "rotating",
             }}
