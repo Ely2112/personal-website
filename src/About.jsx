@@ -44,6 +44,7 @@ const About = () => {
       ["./assets/openai_logo.png", "OpenAI API"],
     ],
   };
+
   return (
     <Box>
       <Box
