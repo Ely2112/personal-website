@@ -17,11 +17,11 @@ const Navbar = (props) => {
     setScrollPosition(position);
   };
 
-  const defaultProps = { color: "#B4B4B8" };
-  const selectedProps = { borderBottom: "1px solid #13426B", color: "#13426B" };
+  const defaultProps = { color: "#0c191f" };
+  const selectedProps = { borderBottom: "1px solid #ffffff", color: "#ffffff" };
   const hoverProps = {
-    borderBottom: { sx: "none", md: "1px solid #26CAD3" },
-    color: { sx: "none", md: "#26CAD3" },
+    borderBottom: { sx: "none", md: "1px solid #fff40e" },
+    color: { sx: "none", md: "#fff40e" },
   };
 
   const [barProps, setBarProps] = useState([
@@ -80,16 +80,17 @@ const Navbar = (props) => {
       ref={ref}
       justifyContent="space-between"
       alignItems="center"
-      bgcolor="#FFFFFF"
+      bgcolor="#019fde"
       sx={{
-        boxShadow: "0px 7px 10px 0px #0000000A ,0px 3px 8px 0px #0000000F",
+        borderBottom: "5px solid #d32130",
+        // boxShadow: "0px 7px 10px 0px #0000000A ,0px 3px 8px 0px #0000000F",
         padding: { xs: "4px 4px", md: "8px 64px" },
         display: { xs: "block", md: "flex" },
       }}
     >
       <Box width="fit-content" sx={{ margin: { xs: "0 auto", md: "0" } }}>
         <Typography
-          color="#13426B"
+          color="#ffffff"
           letterSpacing="0px"
           fontWeight="700"
           sx={{

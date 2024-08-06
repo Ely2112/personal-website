@@ -56,7 +56,7 @@ const Home = (props) => {
               },
               className: "rotating",
             }}
-            textPathProps={{ style: { fill: "#13426B" } }}
+            textPathProps={{ style: { fill: "#0999d6" } }}
             tspanProps={null}
             ellipseProps={null}
             svgProps={null}
@@ -78,8 +78,8 @@ const Home = (props) => {
               },
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
-            <Typography color="#13426B" fontSize="1.2rem" lineHeight="1.2rem">
+            <ContactPageIcon sx={{ color: "#0999d6", fontSize: "2.4rem" }} />
+            <Typography color="#0999d6" fontSize="1.2rem" lineHeight="1.2rem">
               Resume
             </Typography>
           </Button>
@@ -98,8 +98,8 @@ const Home = (props) => {
               },
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B", fontSize: "2.4rem" }} />
-            <Typography color="#13426B" fontSize="1.2rem" lineHeight="1.2rem">
+            <LinkedInIcon sx={{ color: "#0999d6", fontSize: "2.4rem" }} />
+            <Typography color="#0999d6" fontSize="1.2rem" lineHeight="1.2rem">
               LinkedIn
             </Typography>
           </Button>
@@ -162,7 +162,7 @@ const Home = (props) => {
               },
               className: "rotating",
             }}
-            textPathProps={{ style: { fill: "#13426B" } }}
+            textPathProps={{ style: { fill: "#0999d6" } }}
             tspanProps={null}
             ellipseProps={null}
             svgProps={null}
@@ -184,8 +184,8 @@ const Home = (props) => {
               },
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
-            <Typography color="#13426B" fontSize="1rem" lineHeight="1rem">
+            <ContactPageIcon sx={{ color: "#0999d6", fontSize: "2rem" }} />
+            <Typography color="#0999d6" fontSize="1rem" lineHeight="1rem">
               Resume
             </Typography>
           </Button>
@@ -204,8 +204,8 @@ const Home = (props) => {
               },
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B", fontSize: "2rem" }} />
-            <Typography color="#13426B" fontSize="1rem" lineHeight="1rem">
+            <LinkedInIcon sx={{ color: "#0999d6", fontSize: "2rem" }} />
+            <Typography color="#0999d6" fontSize="1rem" lineHeight="1rem">
               LinkedIn
             </Typography>
           </Button>
@@ -268,7 +268,7 @@ const Home = (props) => {
               },
               className: "rotating",
             }}
-            textPathProps={{ style: { fill: "#13426B" } }}
+            textPathProps={{ style: { fill: "#0999d6" } }}
             tspanProps={null}
             ellipseProps={null}
             svgProps={null}
@@ -290,8 +290,8 @@ const Home = (props) => {
               },
             }}
           >
-            <ContactPageIcon sx={{ color: "#13426B", fontSize: "1.6em" }} />
-            <Typography color="#13426B" fontSize="0.8rem" lineHeight="0.8rem">
+            <ContactPageIcon sx={{ color: "#0999d6", fontSize: "1.6em" }} />
+            <Typography color="#0999d6" fontSize="0.8rem" lineHeight="0.8rem">
               Resume
             </Typography>
           </Button>
@@ -310,8 +310,8 @@ const Home = (props) => {
               },
             }}
           >
-            <LinkedInIcon sx={{ color: "#13426B", fontSize: "1.6rem" }} />
-            <Typography color="#13426B" fontSize="0.8rem" lineHeight="0.8rem">
+            <LinkedInIcon sx={{ color: "#0999d6", fontSize: "1.6rem" }} />
+            <Typography color="#0999d6" fontSize="0.8rem" lineHeight="0.8rem">
               LinkedIn
             </Typography>
           </Button>

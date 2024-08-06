@@ -6,6 +6,14 @@ body {
   margin: 0;
 }
 
+strong {
+  color: #d52031;
+}
+
+ul {
+  padding-left: 24px;
+}
+
 @keyframes blinking {
   0% {
     opacity: 1;

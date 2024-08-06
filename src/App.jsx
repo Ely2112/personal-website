@@ -4,6 +4,8 @@ import "./App.css";
 import GPA from "./GPA";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import About from "./About";
+import Work from "./Work";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
 export const Context = createContext();
@@ -52,12 +54,15 @@ function App() {
             <Home aboutRef={AboutRef} />
           </Box>
         </Context.Provider>
-        <Box ref={AboutRef} width="100vw" height="100vh">
-          <Typography>About</Typography>
+
+        <Box ref={AboutRef} width="100vw" padding="64px 0">
+          <About />
         </Box>
-        <Box ref={WorkRef} width="100vw" height="100vh">
-          <Typography>Work</Typography>
+
+        <Box ref={WorkRef} width="100vw" padding="64px 0">
+          <Work />
         </Box>
+
         <Box ref={EducationRef} width="100vw" height="100vh">
           <Typography>Education</Typography>
         </Box>
