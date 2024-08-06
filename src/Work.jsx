@@ -18,7 +18,7 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 
-import HTML from "./assets/html_logo.png";
+import HTML from "./public/html_logo.png";
 
 const Work = () => {
   // period, company name, position title, details [], skills [[]]
@@ -34,13 +34,13 @@ const Work = () => {
       ],
       [
         [HTML, "HTML"],
-        ["src/assets/css_logo.svg", "CSS"],
-        ["src/assets/javaScript_logo.webp", "JavaScript"],
-        ["src/assets/react_logo.svg", "React"],
-        ["src/assets/mui_logo.png", "Material-UI"],
-        ["src/assets/figma_logo.jpg", "Figma"],
-        ["src/assets/googleanalytics_logo.png", "Google Analytics"],
-        ["src/assets/clarity_logo.jpeg", "Clarity"],
+        ["src/public/css_logo.svg", "CSS"],
+        // ["src/assets/javaScript_logo.webp", "JavaScript"],
+        // ["src/assets/react_logo.svg", "React"],
+        // ["src/assets/mui_logo.png", "Material-UI"],
+        // ["src/assets/figma_logo.jpg", "Figma"],
+        // ["src/assets/googleanalytics_logo.png", "Google Analytics"],
+        // ["src/assets/clarity_logo.jpeg", "Clarity"],
       ],
     ],
     [
@@ -52,10 +52,10 @@ const Work = () => {
         "Investigated OCR models for handwritten medical referral letter recognition, resulting in improved efficiency in hospital operations, particularly in medical appointment scheduling",
       ],
       [
-        ["src/assets/python_logo.svg", "Python"],
-        ["src/assets/keras_logo.png", "Keras"],
-        ["src/assets/scikitlearn_logo.png", "Scikit-learn"],
-        ["src/assets/huggingface_logo.jpeg", "Hugging Face"],
+        // ["src/assets/python_logo.svg", "Python"],
+        // ["src/assets/keras_logo.png", "Keras"],
+        // ["src/assets/scikitlearn_logo.png", "Scikit-learn"],
+        // ["src/assets/huggingface_logo.jpeg", "Hugging Face"],
       ],
     ],
     [
@@ -67,10 +67,10 @@ const Work = () => {
         "Updated front-end interactive software using Windows Forms C# for the Education Bureau's secondary student electives subject selection process, improving user experience and efficiency",
       ],
       [
-        ["src/assets/python_logo.svg", "Python"],
-        ["src/assets/csharp_logo.png", "C#"],
-        ["src/assets/huggingface_logo.jpeg", "Hugging Face"],
-        ["src/assets/openai_logo.png", "OpenAI API"],
+        // ["src/assets/python_logo.svg", "Python"],
+        // ["src/assets/csharp_logo.png", "C#"],
+        // ["src/assets/huggingface_logo.jpeg", "Hugging Face"],
+        // ["src/assets/openai_logo.png", "OpenAI API"],
       ],
     ],
     [
@@ -81,10 +81,10 @@ const Work = () => {
         "Built a human action recognition model to create an interactive fitness game, encouraging sports participation among teenagers",
       ],
       [
-        ["src/assets/python_logo.svg", "Python"],
-        ["src/assets/c++_logo.png", "C++"],
-        ["src/assets/keras_logo.png", "Keras"],
-        ["src/assets/opencv_logo.png", "OpenCV"],
+        // ["src/assets/python_logo.svg", "Python"],
+        // ["src/assets/c++_logo.png", "C++"],
+        // ["src/assets/keras_logo.png", "Keras"],
+        // ["src/assets/opencv_logo.png", "OpenCV"],
       ],
     ],
   ];
