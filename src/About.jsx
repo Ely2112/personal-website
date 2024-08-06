@@ -9,22 +9,15 @@ import {
   Chip,
 } from "@mui/material";
 
-import Python from "./assets/python_logo.svg";
-import C from "./assets/c_logo.png";
-import Cplusplus from "./assets/c++_logo.png";
-import Java from "./assets/java_logo.png";
-import JavaScript from "./assets/javaScript_logo.webp";
-import Csharp from "./assets/csharp_logo.png";
-
 const About = () => {
   const skills = {
     Languages: [
-      [Python, "Python"],
-      [C, "C"],
-      [Cplusplus, "C++"],
-      [Java, "Java"],
-      [JavaScript, "JavaScript"],
-      [Csharp, "C#"],
+      ["./assets/python_logo.svg", "Python"],
+      ["./assets/c_logo.png", "C"],
+      ["./assets/c++_logo.png", "C++"],
+      ["./assets/java_logo.png", "Java"],
+      ["./assets/javaScript_logo.webp", "JavaScript"],
+      ["./assets/csharp_logo.png", "C#"],
     ],
     AI: [
       ["./assets/pytorch_logo.png", "PyTorch"],
