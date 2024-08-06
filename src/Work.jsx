@@ -38,7 +38,7 @@ const Work = () => {
         "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
       ],
       [
-        [HTML, "HTML"],
+        ["/assets/css_logo.svg", "HTML"],
         ["/assets/css_logo.svg", "CSS"],
         [JavaScript, "JavaScript"],
         ["/assets/react_logo.svg", "React"],
