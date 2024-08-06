@@ -18,6 +18,8 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 
+import HTML from "./assets/html_logo.png";
+
 const Work = () => {
   // period, company name, position title, details [], skills [[]]
   const experiences = [
@@ -31,7 +33,7 @@ const Work = () => {
         "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
       ],
       [
-        ["./assets/html_logo.png", "HTML"],
+        [HTML, "HTML"],
         ["src/assets/css_logo.svg", "CSS"],
         ["src/assets/javaScript_logo.webp", "JavaScript"],
         ["src/assets/react_logo.svg", "React"],
