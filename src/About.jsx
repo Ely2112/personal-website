@@ -12,9 +12,9 @@ import {
 const About = () => {
   const skills = {
     Languages: [
-      ["src/assets/python_logo.svg", "Python"],
-      ["src/assets/c_logo.png", "C"],
-      ["src/assets/c++_logo.png", "C++"],
+      ["/assets/python_logo.svg", "Python"],
+      ["/assets/c_logo.png", "C"],
+      ["/assets/c++_logo.png", "C++"],
       ["src/assets/java_logo.png", "Java"],
       ["src/assets/javaScript_logo.webp", "JavaScript"],
       ["src/assets/csharp_logo.png", "C#"],
@@ -29,7 +29,7 @@ const About = () => {
     ],
     "Front End": [
       ["src/assets/html_logo.png", "HTML"],
-      ["src/assets/css_logo.svg", "CSS"],
+      ["/assets/css_logo.svg", "CSS"],
       ["src/assets/react_logo.svg", "React"],
       ["src/assets/mui_logo.png", "Material-UI"],
       ["src/assets/figma_logo.jpg", "Figma"],
