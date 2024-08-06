@@ -18,6 +18,33 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 
+import Python from "./assets/python_logo.svg";
+import C from "./assets/c_logo.png";
+import Cplusplus from "./assets/c++_logo.png";
+import Java from "./assets/java_logo.png";
+import JavaScript from "./assets/javaScript_logo.webp";
+import Csharp from "./assets/csharp_logo.png";
+
+import PyTorch from "./assets/pytorch_logo.png";
+import Keras from "./assets/keras_logo.png";
+import Scikit_learn from "./assets/scikitlearn_logo.png";
+import OpenCV from "./assets/opencv_logo.png";
+import Hugging_Face from "./assets/huggingface_logo.jpeg";
+import Google_Colab from "./assets/googlecolab_logo.png";
+
+import HTML from "./assets/html_logo.png";
+import CSS from "./assets/css_logo.svg";
+import React_logo from "./assets/react_logo.svg";
+import Material_UI from "./assets/mui_logo.png";
+import Figma from "./assets/figma_logo.jpg";
+
+import VSCode from "./assets/vscode_logo.png";
+import Intellij from "./assets/intellij_logo.jpeg";
+import GitHub from "./assets/github_logo.png";
+import Google_Analytics from "./assets/googleanalytics_logo.png";
+import Clarity from "./assets/clarity_logo.jpeg";
+import OpenAI_API from "./assets/openai_logo.png";
+
 const Work = () => {
   // period, company name, position title, details [], skills [[]]
   const experiences = [
@@ -31,14 +58,14 @@ const Work = () => {
         "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
       ],
       [
-        ["./assets/html_logo.png", "HTML"],
-        ["./assets/css_logo.svg", "CSS"],
-        ["./assets/javaScript_logo.webp", "JavaScript"],
-        ["./assets/react_logo.svg", "React"],
-        ["./assets/mui_logo.png", "Material-UI"],
-        ["./assets/figma_logo.jpg", "Figma"],
-        ["./assets/googleanalytics_logo.png", "Google Analytics"],
-        ["./assets/clarity_logo.jpeg", "Clarity"],
+        [HTML, "HTML"],
+        [CSS, "CSS"],
+        [JavaScript, "JavaScript"],
+        [React_logo, "React"],
+        [Material_UI, "Material-UI"],
+        [Figma, "Figma"],
+        [Google_Analytics, "Google Analytics"],
+        [Clarity, "Clarity"],
       ],
     ],
     [
@@ -50,10 +77,10 @@ const Work = () => {
         "Investigated OCR models for handwritten medical referral letter recognition, resulting in improved efficiency in hospital operations, particularly in medical appointment scheduling",
       ],
       [
-        ["./assets/python_logo.svg", "Python"],
-        ["./assets/keras_logo.png", "Keras"],
-        ["./assets/scikitlearn_logo.png", "Scikit-learn"],
-        ["./assets/huggingface_logo.jpeg", "Hugging Face"],
+        [Python, "Python"],
+        [Keras, "Keras"],
+        [Scikit_learn, "Scikit-learn"],
+        [Hugging_Face, "Hugging Face"],
       ],
     ],
     [
@@ -65,10 +92,10 @@ const Work = () => {
         "Updated front-end interactive software using Windows Forms C# for the Education Bureau's secondary student electives subject selection process, improving user experience and efficiency",
       ],
       [
-        ["./assets/python_logo.svg", "Python"],
-        ["./assets/csharp_logo.png", "C#"],
-        ["./assets/huggingface_logo.jpeg", "Hugging Face"],
-        ["./assets/openai_logo.png", "OpenAI API"],
+        [Python, "Python"],
+        [Csharp, "C#"],
+        [Hugging_Face, "Hugging Face"],
+        [OpenAI_API, "OpenAI API"],
       ],
     ],
     [
@@ -79,10 +106,10 @@ const Work = () => {
         "Built a human action recognition model to create an interactive fitness game, encouraging sports participation among teenagers",
       ],
       [
-        ["./assets/python_logo.svg", "Python"],
-        ["./assets/c++_logo.png", "C++"],
-        ["./assets/keras_logo.png", "Keras"],
-        ["./assets/opencv_logo.png", "OpenCV"],
+        [Python, "Python"],
+        [Cplusplus, "C++"],
+        [Keras, "Keras"],
+        [OpenCV, "OpenCV"],
       ],
     ],
   ];

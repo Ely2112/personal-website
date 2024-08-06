@@ -16,6 +16,26 @@ import Java from "./assets/java_logo.png";
 import JavaScript from "./assets/javaScript_logo.webp";
 import Csharp from "./assets/csharp_logo.png";
 
+import PyTorch from "./assets/pytorch_logo.png";
+import Keras from "./assets/keras_logo.png";
+import Scikit_learn from "./assets/scikitlearn_logo.png";
+import OpenCV from "./assets/opencv_logo.png";
+import Hugging_Face from "./assets/huggingface_logo.jpeg";
+import Google_Colab from "./assets/googlecolab_logo.png";
+
+import HTML from "./assets/html_logo.png";
+import CSS from "./assets/css_logo.svg";
+import React_logo from "./assets/react_logo.svg";
+import Material_UI from "./assets/mui_logo.png";
+import Figma from "./assets/figma_logo.jpg";
+
+import VSCode from "./assets/vscode_logo.png";
+import Intellij from "./assets/intellij_logo.jpeg";
+import GitHub from "./assets/github_logo.png";
+import Google_Analytics from "./assets/googleanalytics_logo.png";
+import Clarity from "./assets/clarity_logo.jpeg";
+import OpenAI_API from "./assets/openai_logo.png";
+
 const About = () => {
   const skills = {
     Languages: [
@@ -27,28 +47,28 @@ const About = () => {
       [Csharp, "C#"],
     ],
     AI: [
-      ["./assets/pytorch_logo.png", "PyTorch"],
-      ["./assets/keras_logo.png", "Keras"],
-      ["./assets/scikitlearn_logo.png", "Scikit-learn"],
-      ["./assets/opencv_logo.png", "OpenCV"],
-      ["./assets/huggingface_logo.jpeg", "Hugging Face"],
-      ["./assets/googlecolab_logo.png", "Google Colab"],
+      [PyTorch, "PyTorch"],
+      [Keras, "Keras"],
+      [Scikit_learn, "Scikit-learn"],
+      [OpenCV, "OpenCV"],
+      [Hugging_Face, "Hugging Face"],
+      [Google_Colab, "Google Colab"],
     ],
     "Front End": [
-      ["./assets/html_logo.png", "HTML"],
-      ["./assets/css_logo.svg", "CSS"],
-      ["./assets/react_logo.svg", "React"],
-      ["./assets/mui_logo.png", "Material-UI"],
-      ["./assets/figma_logo.jpg", "Figma"],
+      [HTML, "HTML"],
+      [CSS, "CSS"],
+      [React_logo, "React"],
+      [Material_UI, "Material-UI"],
+      [Figma, "Figma"],
     ],
     Tools: [
-      ["./assets/vscode_logo.png", "VS Code"],
-      ["./assets/intellij_logo.jpeg", "Intellij"],
-      ["./assets/github_logo.png", "GitHub"],
-      ["./assets/googlecolab_logo.png", "Google Colab"],
-      ["./assets/googleanalytics_logo.png", "Google Analytics"],
-      ["./assets/clarity_logo.jpeg", "Clarity"],
-      ["./assets/openai_logo.png", "OpenAI API"],
+      [VSCode, "VS Code"],
+      [Intellij, "Intellij"],
+      [GitHub, "GitHub"],
+      [Google_Colab, "Google Colab"],
+      [Google_Analytics, "Google Analytics"],
+      [Clarity, "Clarity"],
+      [OpenAI_API, "OpenAI API"],
     ],
   };
   return (
