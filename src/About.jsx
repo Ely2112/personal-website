@@ -20,7 +20,7 @@ import PyTorch from "./assets/pytorch_logo.png";
 import Keras from "./assets/keras_logo.png";
 import Scikit_learn from "./assets/scikitlearn_logo.png";
 import OpenCV from "./assets/opencv_logo.png";
-import Hugging_Face from "./assets/huggingface_logo.jpeg";
+import Hugging_Face from "./assets/huggingface_logo.png";
 import Google_Colab from "./assets/googlecolab_logo.png";
 
 import HTML from "./assets/html_logo.png";
