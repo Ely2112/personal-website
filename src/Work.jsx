@@ -34,8 +34,8 @@ const Work = () => {
       ],
       [
         [HTML, "HTML"],
-        ["/assets/css_logo.svg", "CSS"],
-        ["/assets/javaScript_logo.webp", "JavaScript"],
+        ["assets/css_logo.svg", "CSS"],
+        ["assets/javaScript_logo.webp", "JavaScript"],
         ["src/assets/react_logo.svg", "React"],
         ["src/assets/mui_logo.png", "Material-UI"],
         ["src/assets/figma_logo.jpg", "Figma"],
