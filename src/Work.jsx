@@ -18,6 +18,13 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 
+import Python from "./assets/python_logo.svg";
+import C from "./assets/c_logo.png";
+import Cplusplus from "./assets/c++_logo.png";
+import Java from "./assets/java_logo.png";
+import JavaScript from "./assets/javaScript_logo.webp";
+import Csharp from "./assets/csharp_logo.png";
+
 const Work = () => {
   // period, company name, position title, details [], skills [[]]
   const experiences = [
@@ -31,14 +38,14 @@ const Work = () => {
         "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
       ],
       [
-        ["dist/assets/html_logo.png", "HTML"],
-        ["dist/assets/css_logo.svg", "CSS"],
-        ["dist/assets/javaScript_logo.webp", "JavaScript"],
-        ["dist/assets/react_logo.svg", "React"],
-        ["dist/assets/mui_logo.png", "Material-UI"],
-        ["dist/assets/figma_logo.jpg", "Figma"],
-        ["dist/assets/googleanalytics_logo.png", "Google Analytics"],
-        ["dist/assets/clarity_logo.jpeg", "Clarity"],
+        [HTML, "HTML"],
+        ["/assets/css_logo.svg", "CSS"],
+        [JavaScript, "JavaScript"],
+        ["/assets/react_logo.svg", "React"],
+        ["/assets/mui_logo.png", "Material-UI"],
+        ["/assets/figma_logo.jpg", "Figma"],
+        ["/assets/googleanalytics_logo.png", "Google Analytics"],
+        ["/assets/clarity_logo.jpeg", "Clarity"],
       ],
     ],
     [
@@ -50,10 +57,10 @@ const Work = () => {
         "Investigated OCR models for handwritten medical referral letter recognition, resulting in improved efficiency in hospital operations, particularly in medical appointment scheduling",
       ],
       [
-        ["dist/assets/python_logo.svg", "Python"],
-        ["dist/assets/keras_logo.png", "Keras"],
-        ["dist/assets/scikitlearn_logo.png", "Scikit-learn"],
-        ["dist/assets/huggingface_logo.jpeg", "Hugging Face"],
+        [Python, "Python"],
+        ["/assets/keras_logo.png", "Keras"],
+        ["/assets/scikitlearn_logo.png", "Scikit-learn"],
+        ["/assets/huggingface_logo.jpeg", "Hugging Face"],
       ],
     ],
     [
@@ -65,10 +72,10 @@ const Work = () => {
         "Updated front-end interactive software using Windows Forms C# for the Education Bureau's secondary student electives subject selection process, improving user experience and efficiency",
       ],
       [
-        ["dist/assets/python_logo.svg", "Python"],
-        ["dist/assets/csharp_logo.png", "C#"],
-        ["dist/assets/huggingface_logo.jpeg", "Hugging Face"],
-        ["dist/assets/openai_logo.png", "OpenAI API"],
+        [Python, "Python"],
+        [Csharp, "C#"],
+        ["/assets/huggingface_logo.jpeg", "Hugging Face"],
+        ["/assets/openai_logo.png", "OpenAI API"],
       ],
     ],
     [
@@ -79,10 +86,10 @@ const Work = () => {
         "Built a human action recognition model to create an interactive fitness game, encouraging sports participation among teenagers",
       ],
       [
-        ["dist/assets/python_logo.svg", "Python"],
-        ["dist/assets/c++_logo.png", "C++"],
-        ["dist/assets/keras_logo.png", "Keras"],
-        ["dist/assets/opencv_logo.png", "OpenCV"],
+        [Python, "Python"],
+        [Cplusplus, "C++"],
+        ["/assets/keras_logo.png", "Keras"],
+        ["/assets/opencv_logo.png", "OpenCV"],
       ],
     ],
   ];

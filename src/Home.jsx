@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
-import personalImage from "/dist/assets/personal_image2.jpeg";
+import personalImage from "./assets/personal_image2.jpeg";
 import ReactCurvedText from "react-curved-text";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

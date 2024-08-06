@@ -9,39 +9,46 @@ import {
   Chip,
 } from "@mui/material";
 
+import Python from "./assets/python_logo.svg";
+import C from "./assets/c_logo.png";
+import Cplusplus from "./assets/c++_logo.png";
+import Java from "./assets/java_logo.png";
+import JavaScript from "./assets/javaScript_logo.webp";
+import Csharp from "./assets/csharp_logo.png";
+
 const About = () => {
   const skills = {
     Languages: [
-      ["dist/assets/python_logo.svg", "Python"],
-      ["dist/assets/c_logo.png", "C"],
-      ["dist/assets/c++_logo.png", "C++"],
-      ["dist/assets/java_logo.png", "Java"],
-      ["dist/assets/javaScript_logo.webp", "JavaScript"],
-      ["dist/assets/csharp_logo.png", "C#"],
+      [Python, "Python"],
+      [C, "C"],
+      [Cplusplus, "C++"],
+      [Java, "Java"],
+      [JavaScript, "JavaScript"],
+      [Csharp, "C#"],
     ],
     AI: [
-      ["dist/assets/pytorch_logo.png", "PyTorch"],
-      ["dist/assets/keras_logo.png", "Keras"],
-      ["dist/assets/scikitlearn_logo.png", "Scikit-learn"],
-      ["dist/assets/opencv_logo.png", "OpenCV"],
-      ["dist/assets/huggingface_logo.jpeg", "Hugging Face"],
-      ["dist/assets/googlecolab_logo.png", "Google Colab"],
+      ["./assets/pytorch_logo.png", "PyTorch"],
+      ["./assets/keras_logo.png", "Keras"],
+      ["./assets/scikitlearn_logo.png", "Scikit-learn"],
+      ["./assets/opencv_logo.png", "OpenCV"],
+      ["./assets/huggingface_logo.jpeg", "Hugging Face"],
+      ["./assets/googlecolab_logo.png", "Google Colab"],
     ],
     "Front End": [
-      ["dist/assets/html_logo.png", "HTML"],
-      ["dist/assets/css_logo.svg", "CSS"],
-      ["dist/assets/react_logo.svg", "React"],
-      ["dist/assets/mui_logo.png", "Material-UI"],
-      ["dist/assets/figma_logo.jpg", "Figma"],
+      ["./assets/html_logo.png", "HTML"],
+      ["./assets/css_logo.svg", "CSS"],
+      ["./assets/react_logo.svg", "React"],
+      ["./assets/mui_logo.png", "Material-UI"],
+      ["./assets/figma_logo.jpg", "Figma"],
     ],
     Tools: [
-      ["dist/assets/vscode_logo.png", "VS Code"],
-      ["dist/assets/intellij_logo.jpeg", "Intellij"],
-      ["dist/assets/github_logo.png", "GitHub"],
-      ["dist/assets/googlecolab_logo.png", "Google Colab"],
-      ["dist/assets/googleanalytics_logo.png", "Google Analytics"],
-      ["dist/assets/clarity_logo.jpeg", "Clarity"],
-      ["dist/assets/openai_logo.png", "OpenAI API"],
+      ["./assets/vscode_logo.png", "VS Code"],
+      ["./assets/intellij_logo.jpeg", "Intellij"],
+      ["./assets/github_logo.png", "GitHub"],
+      ["./assets/googlecolab_logo.png", "Google Colab"],
+      ["./assets/googleanalytics_logo.png", "Google Analytics"],
+      ["./assets/clarity_logo.jpeg", "Clarity"],
+      ["./assets/openai_logo.png", "OpenAI API"],
     ],
   };
   return (
