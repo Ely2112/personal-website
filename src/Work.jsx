@@ -53,7 +53,7 @@ const Work = () => {
       "Hong Kong Exchanges and Clearing Limited (HKEx)",
       "Summer Intern",
       [
-        "Identified over 10 gaps between internal design systems and production websites by building 2 analysis websites, enhancing system alignment and early-stage early-stage issue detection",
+        "Identified over 10 gaps between internal design systems and production websites by building 2 analysis websites, enhancing system alignment and early-stage issue detection",
         "Enhanced internal design system functionality by developing 2 new components based on React and Material-UI",
         "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
       ],
