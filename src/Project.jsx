@@ -1,5 +1,7 @@
 import React from "react";
 import {
+  Avatar,
+  Chip,
   CardActionArea,
   Box,
   Typography,
@@ -17,6 +19,33 @@ import arknight_auto_clicker_image from "./assets/arknight_auto_clicker.png";
 import personal_website_image from "./assets/personal_website.png";
 import rhine_lab_website_image from "./assets/rhine_lab_website.png";
 
+import Python from "./assets/python_logo.svg";
+import C from "./assets/c_logo.png";
+import Cplusplus from "./assets/c++_logo.png";
+import Java from "./assets/java_logo.png";
+import JavaScript from "./assets/javaScript_logo.webp";
+import Csharp from "./assets/csharp_logo.png";
+
+import PyTorch from "./assets/pytorch_logo.png";
+import Keras from "./assets/keras_logo.png";
+import Scikit_learn from "./assets/scikitlearn_logo.png";
+import OpenCV from "./assets/opencv_logo.png";
+import Hugging_Face from "./assets/huggingface_logo.png";
+import Google_Colab from "./assets/googlecolab_logo.png";
+
+import HTML from "./assets/html_logo.png";
+import CSS from "./assets/css_logo.svg";
+import React_logo from "./assets/react_logo.svg";
+import Material_UI from "./assets/mui_logo.png";
+import Figma from "./assets/figma_logo.jpg";
+
+import VSCode from "./assets/vscode_logo.png";
+import Intellij from "./assets/intellij_logo.jpeg";
+import GitHub from "./assets/github_logo.png";
+import Google_Analytics from "./assets/googleanalytics_logo.png";
+import Clarity from "./assets/clarity_logo.jpeg";
+import OpenAI_API from "./assets/openai_logo.png";
+
 const Project = () => {
   // image, title, description, link
   const projects = [
@@ -29,6 +58,15 @@ const Project = () => {
         [<InsertLinkIcon />, "https://ely2112.github.io/personal-website/"],
         [<GitHubIcon />, "https://github.com/Ely2112/personal-website"],
       ],
+      [
+        [HTML, "HTML"],
+        [CSS, "CSS"],
+        [JavaScript, "JavaScript"],
+        [React_logo, "React"],
+        [Material_UI, "Material-UI"],
+        [Figma, "Figma"],
+        [Clarity, "Clarity"],
+      ],
     ],
     [
       arknight_auto_clicker_image,
@@ -38,6 +76,11 @@ const Project = () => {
       [
         [<YouTubeIcon />, "https://www.youtube.com/watch?v=0az1m93iW_0"],
         [<GitHubIcon />, "https://github.com/Ely2112/Arknights-Auto-Clicker"],
+      ],
+      [
+        [Python, "Python"],
+        [Keras, "Keras"],
+        [Hugging_Face, "Hugging Face"],
       ],
     ],
     [
@@ -49,6 +92,12 @@ const Project = () => {
         [<InsertLinkIcon />, "https://ely2112.github.io/Rhine_Lab/"],
         [<YouTubeIcon />, "https://www.youtube.com/watch?v=-RRhjNnyn_4"],
         [<GitHubIcon />, "https://github.com/Ely2112/Rhine_Lab"],
+      ],
+      [
+        [HTML, "HTML"],
+        [CSS, "CSS"],
+        [JavaScript, "JavaScript"],
+        [Figma, "Figma"],
       ],
     ],
   ];
@@ -123,6 +172,20 @@ const Project = () => {
                   >
                     {project[2]}
                   </Typography>
+                  <Box display="flex" flexWrap="wrap" paddingBottom="16px">
+                    {project[5].map((data) => {
+                      return (
+                        <Chip
+                          avatar={<Avatar alt={data[1]} src={data[0]} />}
+                          variant="outlined"
+                          label={data[1]}
+                          sx={{
+                            margin: "4px",
+                          }}
+                        />
+                      );
+                    })}
+                  </Box>
                   <Box display="flex" sx={{ gap: "4px" }}>
                     {project[4].map((link) => {
                       console.log(link);
