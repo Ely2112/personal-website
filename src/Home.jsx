@@ -380,7 +380,8 @@ const Home = (props) => {
           setOpen(false);
         }}
         autoHideDuration={3000}
-        message="Copy!"
+        message="Copied!"
+        width="fit-content"
       />
     </Box>
   );

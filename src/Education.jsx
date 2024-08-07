@@ -38,6 +38,7 @@ const Education = () => {
         "Major in Computer Science with an Extended Major in Artificial Intelligence",
         "CGPA: 3.92 / 4.30; Dean's List for 6 semesters",
         "Undergraduate Teaching Assistant: Conduct weekly tutorial sections to help students with Python and computer science knowledge",
+        "Undergraduate Researcher: Researched DLFormer in Computer vision, and explored millimeter wave sensor applications in human action recognition",
       ],
       "https://hkust.edu.hk/",
     ],
