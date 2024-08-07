@@ -1,14 +1,17 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, Tooltip } from "@mui/material";
 import personalImage from "./assets/personal_image2.jpeg";
 import ReactCurvedText from "react-curved-text";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import { useContext } from "react";
+import Snackbar from "@mui/material/Snackbar";
+import { useState, useContext } from "react";
 import { Context } from "./App";
 
 const Home = (props) => {
+  const [open, setOpen] = useState(false);
+
   const [height, setHeight] = useContext(Context);
   return (
     <Box height="100%" width="100%">
@@ -73,9 +76,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <ContactPageIcon sx={{ color: "#0999d6", fontSize: "2.4rem" }} />
@@ -93,9 +93,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <LinkedInIcon sx={{ color: "#0999d6", fontSize: "2.4rem" }} />
@@ -104,6 +101,26 @@ const Home = (props) => {
             </Typography>
           </Button>
         </Box>
+
+        <Box display="flex" position="relative" top="260px">
+          <Button sx={{ textTransform: "none" }}>
+            <Tooltip title="Copy" arrow>
+              <Typography
+                color="#0999d6"
+                fontSize="1.2rem"
+                lineHeight="1.2rem"
+                sx={{ cursor: "pointer" }}
+                onClick={() => {
+                  setOpen(true);
+                  navigator.clipboard.writeText("poonkwanheianson@gmail.com");
+                }}
+              >
+                poonkwanheianson@gmail.com
+              </Typography>
+            </Tooltip>
+          </Button>
+        </Box>
+
         <Box display="flex" position="relative" top="280px">
           <ArrowDownwardIcon
             className="blinking"
@@ -179,9 +196,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <ContactPageIcon sx={{ color: "#0999d6", fontSize: "2rem" }} />
@@ -199,9 +213,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <LinkedInIcon sx={{ color: "#0999d6", fontSize: "2rem" }} />
@@ -210,6 +221,26 @@ const Home = (props) => {
             </Typography>
           </Button>
         </Box>
+
+        <Box display="flex" position="relative" top="215px">
+          <Button sx={{ textTransform: "none" }}>
+            <Tooltip title="Copy" arrow>
+              <Typography
+                color="#0999d6"
+                fontSize="1rem"
+                lineHeight="1rem"
+                sx={{ cursor: "pointer" }}
+                onClick={() => {
+                  setOpen(true);
+                  navigator.clipboard.writeText("poonkwanheianson@gmail.com");
+                }}
+              >
+                poonkwanheianson@gmail.com
+              </Typography>
+            </Tooltip>
+          </Button>
+        </Box>
+
         <Box display="flex" position="relative" top="230px">
           <ArrowDownwardIcon
             className="blinking"
@@ -285,9 +316,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <ContactPageIcon sx={{ color: "#0999d6", fontSize: "1.6em" }} />
@@ -305,9 +333,6 @@ const Home = (props) => {
               gap: "0.5rem",
               display: "flex",
               verticalAlign: "baseline",
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
             }}
           >
             <LinkedInIcon sx={{ color: "#0999d6", fontSize: "1.6rem" }} />
@@ -316,6 +341,26 @@ const Home = (props) => {
             </Typography>
           </Button>
         </Box>
+
+        <Box display="flex" position="relative" top="180px">
+          <Button sx={{ textTransform: "none" }}>
+            <Tooltip title="Copy" arrow>
+              <Typography
+                color="#0999d6"
+                fontSize="0.8rem"
+                lineHeight="0.8rem"
+                sx={{ cursor: "pointer" }}
+                onClick={() => {
+                  setOpen(true);
+                  navigator.clipboard.writeText("poonkwanheianson@gmail.com");
+                }}
+              >
+                poonkwanheianson@gmail.com
+              </Typography>
+            </Tooltip>
+          </Button>
+        </Box>
+
         <Box display="flex" position="relative" top="190px">
           <ArrowDownwardIcon
             className="blinking"
@@ -329,6 +374,14 @@ const Home = (props) => {
           />
         </Box>
       </Box>
+      <Snackbar
+        open={open}
+        onClose={() => {
+          setOpen(false);
+        }}
+        autoHideDuration={3000}
+        message="Copy!"
+      />
     </Box>
   );
 };

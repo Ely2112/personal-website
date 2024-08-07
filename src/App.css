@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #0c191f;
+}
+
 strong {
   color: #d52031;
 }
