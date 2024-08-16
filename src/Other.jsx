@@ -102,24 +102,28 @@ const Other = () => {
                   {other[1]}
                 </Typography>
                 <Box paddingBottom="16px">
-                  {other[2].map((description) => {
-                    return (
-                      <Typography
-                        color="#848991"
-                        fontWeight="400"
-                        sx={{
-                          fontSize: {
-                            xs: "1rem",
-                            sm: "1.1rem",
-                            md: "1.2rem",
-                            lg: "1.3rem",
-                          },
-                        }}
-                      >
-                        {description}
-                      </Typography>
-                    );
-                  })}
+                  <ul>
+                    {other[2].map((description) => {
+                      return (
+                        <li>
+                          <Typography
+                            color="#848991"
+                            fontWeight="400"
+                            sx={{
+                              fontSize: {
+                                xs: "1rem",
+                                sm: "1.1rem",
+                                md: "1.2rem",
+                                lg: "1.3rem",
+                              },
+                            }}
+                          >
+                            {description}
+                          </Typography>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </Box>
                 <Grid
                   container

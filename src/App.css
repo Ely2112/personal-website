@@ -12,6 +12,7 @@ strong {
 
 ul {
   padding-left: 24px;
+  list-style-type: circle;
 }
 
 @keyframes blinking {
