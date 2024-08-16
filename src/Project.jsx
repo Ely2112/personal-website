@@ -51,7 +51,7 @@ const Project = () => {
   const projects = [
     [
       personal_website_image,
-      "This personal website",
+      "Personal website",
       "This personal website",
       "https://ely2112.github.io/personal-website/",
       [

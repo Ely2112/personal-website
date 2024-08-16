@@ -95,7 +95,7 @@ const About = () => {
             fontSize: { xs: "1rem", sm: "1.2rem", md: "1.4rem", lg: "1.5em" },
           }}
         >
-          I'm Poon Kwan Hei Anson, an undergraduate student majoring in{" "}
+          I am Poon Kwan Hei Anson, an undergraduate student majoring in{" "}
           <strong>Computer Science</strong> with an Extended Major in{" "}
           <strong>Artificial Intelligence</strong> at the{" "}
           <a href="https://hkust.edu.hk/" target="_blank">
@@ -113,8 +113,9 @@ const About = () => {
         >
           I am interested in <strong>AI</strong> and <strong>Web Dev</strong>. I
           have a track record of developing <strong>AI</strong> and{" "}
-          <strong>NLP</strong> models, and built a{" "}
-          <strong>design system</strong> during previous internships.
+          <strong>NLP</strong> models, and built{" "}
+          <strong>React components for design system</strong> during previous
+          internships.
         </Typography>
 
         <Typography

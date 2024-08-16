@@ -8,6 +8,7 @@ import About from "./About";
 import Work from "./Work";
 import Education from "./Education";
 import Project from "./Project";
+import Other from "./Other";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
 export const Context = createContext();
@@ -72,12 +73,12 @@ function App() {
         <Box ref={ProjectRef} width="100vw" padding="10px 0 64px 0">
           <Project />
         </Box>
-        <Box ref={OtherRef} width="100vw" height="100vh">
-          <Typography>Other</Typography>
+        <Box ref={OtherRef} width="100vw" padding="10px 0 64px 0">
+          <Other />
         </Box>
-        <Box margin="24px auto" width="90vw" height="70vh">
+        {/* <Box margin="24px auto" width="90vw" height="70vh">
           <GPA />
-        </Box>
+        </Box> */}
       </Box>
     </ThemeProvider>
   );

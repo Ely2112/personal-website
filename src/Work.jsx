@@ -136,7 +136,7 @@ const Work = () => {
         sx={{
           padding: "0",
           [`& .${timelineOppositeContentClasses.root}`]: {
-            flex: 0.2,
+            flex: 0.25,
           },
         }}
       >
