@@ -53,9 +53,9 @@ const Work = () => {
       "Hong Kong Exchanges and Clearing Limited (HKEx)",
       "Summer Intern",
       [
-        "Identified over 10 gaps between internal design systems and production websites by building 2 analysis websites, enhancing system alignment and early-stage issue detection",
-        "Enhanced internal design system functionality by developing 2 new components based on React and Material-UI",
-        "Improved user experience insights by evaluating and presenting Microsoft Clarity and Google Analytics to the UI/UX teams",
+        "Refined HKEX internal design system by building 2 analysis websites, implementing Shift Left Testing practices, and identifying and addressing over 10 gaps, leading to earlier defect detection and better system alignment",
+        "Developed 2 new components for HKEX internal design system to improve user experience, resulting in a consistent design system that boosted web development progress and reduced interface inconsistencies",
+        "Researched and presented web analytics tool, Microsoft Clarity, to UI/UX teams, resulting in targeted improvements to the user interface that significantly enhanced usability and user engagement",
       ],
       [
         [HTML, "HTML"],
@@ -74,8 +74,8 @@ const Work = () => {
       "Hospital Authority",
       "Summer Intern",
       [
-        "Developed an AI model to predict patient length of stay in a hospital with 70.2% accuracy, optimizing hospital bed allocation and enhancing clinical resource management",
-        "Investigated OCR models for handwritten medical referral letter recognition, resulting in improved efficiency in hospital operations, particularly in medical appointment scheduling",
+        "Collaborated with doctors and seniors data scientist to create an AI model for predicting patient length of stay using 100,000+ records, achieving 70.2% accuracy, optimizing hospital bed allocation and enhancing clinical resource management",
+        "Investigated OCR models for handwritten medical referral letter recognition, increasing efficiency in appointment scheduling, reducing processing time, and saving substantial human effort by minimizing manual checks",
       ],
       [
         [Python, "Python"],
@@ -90,8 +90,8 @@ const Work = () => {
       "Optix Solutions Limited",
       "AI R&D Intern",
       [
-        "Developed an Reasoning NLP model for semantic analysis of MTR company construction site reports, streamlining daily report screening processes, reducing engineers' workload, and contributing to a decrease in construction site accidents",
-        "Updated front-end interactive software using Windows Forms C# for the Education Bureau's secondary student electives subject selection process, improving user experience and efficiency",
+        "Developed a semantic analysis NLP model for MTR Corporation Limited's construction site reports with over 95% accuracy, streamlined daily report screening, reducing engineers' workload and contributing to maximize building safety",
+        "Remodelled software front-end and UI using C# Windows Forms for the Education Bureau's secondary student elective subject selection process, improved the efficiency and user experience of the selection process",
       ],
       [
         [Python, "Python"],
@@ -106,7 +106,7 @@ const Work = () => {
       "ATTA Technologies",
       "Research Engineer Intern",
       [
-        "Built a human action recognition model to create an interactive fitness game, encouraging sports participation among teenagers",
+        "Built an interactive fitness game using human action recognition model, encouraged sports participation among teenagers",
       ],
       [
         [Python, "Python"],
