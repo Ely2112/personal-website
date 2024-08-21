@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, createContext } from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Button } from "@mui/material";
 import "./App.css";
 import GPA from "./GPA";
 import Navbar from "./Navbar";
@@ -57,6 +57,14 @@ function App() {
             <Home aboutRef={AboutRef} />
           </Box>
         </Context.Provider>
+
+        <Button
+          onClick={() => {
+            window.clarity("stop");
+          }}
+        >
+          no clarity recording
+        </Button>
 
         <Box ref={AboutRef} width="100vw" padding="10px 0 64px 0">
           <About />
