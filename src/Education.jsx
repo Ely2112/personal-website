@@ -67,7 +67,6 @@ const Education = () => {
         }}
       >
         {experiences.map((experience) => {
-          console.log(experience);
           return (
             <>
               <TimelineItem>

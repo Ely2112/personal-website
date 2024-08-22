@@ -123,7 +123,6 @@ const Project = () => {
         columns={{ xs: 4, md: 8 }}
       >
         {projects.map((project) => {
-          console.log(project);
           return (
             <Grid item xs={4}>
               <Card variant="outlined" sx={{ borderRadius: "16px" }}>
@@ -188,7 +187,6 @@ const Project = () => {
                   </Box>
                   <Box display="flex" sx={{ gap: "4px" }}>
                     {project[4].map((link) => {
-                      console.log(link);
                       return (
                         <IconButton
                           href={link[1]}

@@ -142,8 +142,6 @@ const About = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {Object.keys(skills).map((skill) => {
-            console.log(skill);
-            console.log(skills[skill]);
             return (
               <Grid item xs={4}>
                 <Typography

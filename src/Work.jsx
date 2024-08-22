@@ -141,7 +141,6 @@ const Work = () => {
         }}
       >
         {experiences.map((experience) => {
-          console.log(experience);
           return (
             <>
               <TimelineItem>

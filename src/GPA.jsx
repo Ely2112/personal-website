@@ -140,10 +140,6 @@ const GPA = () => {
             tickLabelStyle: { fontFamily: "FS Elliot Pro" },
           },
         ]}
-        // onAreaClick={(event, d) => console.log(d)}
-        // onMarkClick={(event, d) => console.log(d)}
-        // onLineClick={(event, d) => console.log(d)}
-        // onAxisClick={(event, d) => console.log(d)}
       >
         <ChartsReferenceLine
           y={3.7}
