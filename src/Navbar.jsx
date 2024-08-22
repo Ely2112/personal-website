@@ -88,7 +88,11 @@ const Navbar = (props) => {
         display: { xs: "block", md: "flex" },
       }}
     >
-      <Box width="fit-content" sx={{ margin: { xs: "0 auto", md: "0" } }}>
+      <Box
+        width="fit-content"
+        className="clarity-test-component-level-tracking"
+        sx={{ margin: { xs: "0 auto", md: "0" } }}
+      >
         <Typography
           color="#ffffff"
           letterSpacing="0px"
