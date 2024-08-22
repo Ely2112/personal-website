@@ -58,14 +58,6 @@ function App() {
           </Box>
         </Context.Provider>
 
-        <Button
-          onClick={() => {
-            window.clarity("stop");
-          }}
-        >
-          no clarity recording
-        </Button>
-
         <Box ref={AboutRef} width="100vw" padding="10px 0 64px 0">
           <About />
         </Box>
