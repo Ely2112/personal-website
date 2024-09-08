@@ -26,7 +26,7 @@ const Education = () => {
       "ETH Zurich",
       "Exchange Student",
       [
-        "Relevant Coursework: Mobile Computing, Human Computer Interaction, Visual Computing",
+        "Relevant Coursework: Wireless Network and Mobile Computing, Human Computer Interaction, Visual Computing",
       ],
       "https://ethz.ch/en.html",
     ],
