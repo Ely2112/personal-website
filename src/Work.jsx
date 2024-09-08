@@ -55,7 +55,7 @@ const Work = () => {
       [
         "Refined HKEX internal design system by building 2 analysis websites, implementing Shift Left Testing practices, and identifying and addressing over 10 gaps, leading to earlier defect detection and better system alignment",
         "Developed 2 new components for HKEX internal design system to improve user experience, resulting in a consistent design system that boosted web development progress and reduced interface inconsistencies",
-        "Researched and presented web analytics tool, Microsoft Clarity, to UI/UX teams, resulting in targeted improvements to the user interface that significantly enhanced usability and user engagement",
+        "Researched and presented web analytics tool, Microsoft Clarity, to UI/UX teams, resulting in targeted improvements to the user interface that  enhanced usability and user engagement by 10%",
       ],
       [
         [HTML, "HTML"],
