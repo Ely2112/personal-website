@@ -49,6 +49,22 @@ const Work = () => {
   // period, company name, position title, details [], skills [[]], link
   const experiences = [
     [
+      "Jun - Aug 2025",
+      "Morgan Stanley",
+      "Technology Summer Analyst",
+      [
+        "Private Wealth Management Client Lifecycle Management Team",
+        "Built a Java dependency rules engine to compute impacted data for account-change requests; modelled dependencies as a directed graph with BFS traversal",
+        "Shipped a React Flow impact-graph UI that explains decisions and supports auditability; integrated via REST and added logging and validation for traceability",
+      ],
+      [
+        [Java, "Java"],
+        [JavaScript, "JavaScript"],
+        [React_logo, "React"],
+      ],
+      "https://www.morganstanley.com/",
+    ],
+    [
       "Jun - Aug 2024",
       "Hong Kong Exchanges and Clearing Limited (HKEx)",
       "Summer Intern",
